@@ -13,6 +13,7 @@ namespace Infotrack.Models.Data
         public AppDbContext(DbContextOptions<AppDbContext> options)
            : base(options)
         {
+            Database.Migrate();
         }
 
         public DbSet<SearchEngine> SearchEngines { get; set; }
