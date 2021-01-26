@@ -1,0 +1,61 @@
+﻿@model HomeFormViewModel
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<form asp-controller="Home" asp-action="Search" method="post">
+
+    <div class="row justify-content-lg-center">
+        <div class="card " style="width: 18rem;">
+            <div class="card-header text-center">
+                Website Rank
+            </div>
+            <div class="card-body">
+                <div class="container">
+
+                    <div class="mb-3 row">
+                        <div class="col-auto">
+                            <label asp-for="SearchTerm.Keywords" class="visually-hidden"></label>
+                            <input asp-for="SearchTerm.Keywords" type="text" class="form-control" placeholder="Type to search...">
+                        </div>
+
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-auto">
+                            <label asp-for="SearchTerm.Url" class="visually-hidden"></label>
+                            <input asp-for="SearchTerm.Url" type="text" class="form-control">
+
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+
+                        <div class="col-auto ">
+                            <label asp-for="SearchTerm.SearchEngineId" class="visually-hidden"></label>
+                            <select asp-for="SearchTerm.SearchEngineId" asp-items="@(new SelectList(Model.SearchEngines,"Id","Name"))" class="form-control"></select>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mb-3 row">
+                        <div class="col-md-auto">
+                            <button type="submit" class="btn btn-primary mb-3">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+
+
+
+</form>
+
+<div asp-validation-summary="All" class="text-danger"></div>
