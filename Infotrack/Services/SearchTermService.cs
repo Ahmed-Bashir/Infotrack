@@ -18,6 +18,8 @@ namespace Infotrack.Services
         }
         public void Add(SearchTerm searchTerm)
         {
+            searchTerm.Url = searchTerm.Url.Substring(searchTerm.Url.IndexOf('.') + 1);
+
             _searchTermRepository.Add(searchTerm);
         }
     }

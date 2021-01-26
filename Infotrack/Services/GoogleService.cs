@@ -13,7 +13,7 @@ namespace Infotrack.Service
 
         public string CreateQueryLink( string keywords)
         {
-            return  $"{Link}{keywords}";
+            return   $"{Link}{keywords.Replace(' ', '+')}"; 
         }
     }
 }

@@ -59,6 +59,7 @@ namespace Infotrack.Service
                 };
 
                 scrapes.Add(scrape);
+
               await  _scrapeRepository.Add(scrape);
             }
 
