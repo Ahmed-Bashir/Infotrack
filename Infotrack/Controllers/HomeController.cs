@@ -55,7 +55,7 @@ namespace Infotrack.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Search(SearchTerm searchTerm)
+        public async Task<IActionResult> Hits(SearchTerm searchTerm)
         {
             if (!ModelState.IsValid)
             {
