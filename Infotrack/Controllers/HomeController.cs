@@ -28,7 +28,9 @@ namespace Infotrack.Controllers
             _searchTermService = searchTermService;
             _searchEngineService = searchEngineService;
             _website = website;
+
         }
+
         [HttpGet]
         public IActionResult Index()
         {

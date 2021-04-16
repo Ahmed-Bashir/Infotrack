@@ -1,0 +1,4 @@
+https://stackoverflow.com/questions/43834174/html-xpath-searching-by-class-name
+https://stackoverflow.com/questions/34624034/select-tag-helper-in-asp-net-core-mvc
+https://stackoverflow.com/questions/20408571/how-to-check-model-string-property-for-null-in-a-razor-view
+https://stackoverflow.com/questions/39031224/how-to-center-cards-in-bootstrap-4
